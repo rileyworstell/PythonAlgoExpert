@@ -8,16 +8,26 @@ to itself in order to obtain the target sum.
 You can assume there will be at most one pair of numbers summing up to the target sum.
 """
 
-def twoNumberSum(array, targetSum):
-    # Write your code here.
-    arr = []
-    for i in array:
-        if (targetSum - i) in arr:
-            x = arr.index(targetSum-i)
-            return [targetSum-i, i]
-        arr.append(i)
-    return []
+class Car:
+    def __init__(self, year):
+        self.color = "Red"
+        self.year = year
 
-array = [3, 5, -4, 8, 11, 1, -1, 6]
-targetSum = 10
-print(twoNumberSum(array, targetSum))
+
+Mustang = Car(1997)
+
+print(Mustang.color)
+print(Mustang.year)
+
+
+dict1 = {
+    "brand": "Nike",
+    "color": "Red"
+}
+
+mydict = dict1
+print(mydict["brand"])
+
+
+arr = [[x for x in range(10)] for _ in range(10)]
+print(arr)
